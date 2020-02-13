@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --lightBlue:#A7cdbd;
+    --lightGreen:#bbe1c3;
+    --brown:#91785d;
+    --darkGreen:#869d7a;
+}
+body{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+   background-color: #f7eeee;
+
+}
+.logo-wiki{
+    margin-top:4rem;
+    margin-left:20rem;
+}
+.search-items{
+    background: transparent;
+    width: 100%;
+    border:none;
+    outline: none;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    border-bottom: 0.3rem solid var(--brown);
+    margin: 1rem 0;
+    padding: 0.5rem;
+    color: var(--brown);
+    transition: all 1s linear;
+}
+.search-items:focus{
+    border-bottom: 0.3rem solid #62f125;
+    
+}
+.search-btn{
+    display: block;
+    width: 60%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid var(--brown);
+    font-size: 1.6rem ;
+    text-transform: capitalize;
+    border-radius: 0.2rem;
+    margin: 0.2rem 0;
+    padding: 0.3rem;
+    cursor: pointer;
+    margin-left: 9rem;
+    color: var(--brown);
+    transition: all 1s linear;
+}
+.search-btn:hover{
+    background-color: var(--brown);
+    color: #ffffff;
+}
+
+.search-logo{
+    display: none;
+    margin: 1rem auto;
+}
+.showIt{
+    display: block;
+}
+.search-item{
+    list-style: none;
+margin: 1rem;
+    padding: 1rem ;
+    border: 3px solid var(--lightBlue);
+    background-color: var(--lightBlue);
+    box-shadow: 0px 10px 10px var(--lightBlue);   
+}
+.search-item__title{
+    text-decoration: none;
+     font-size: 2rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.search-item__text{
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.search-item__links{
+    text-decoration: none;
+    border: none;
+    color: var(--brown);
+    font-size: 1.05rem ;
+transition:  all 1s linear;
+
+}
+.search-item__links:hover{
+    border-bottom: 2px solid var(--brown);
+}
+
+@media screen and (min-width:992px){
+    .results{
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        grid-gap: 1rem;
+    }
+}
